@@ -22,6 +22,7 @@
     <modules>
         <module>factory-method</module>
         <module>factory</module>
+        <module>abstract-factory</module>
     </modules>
 
     <dependencyManagement>
