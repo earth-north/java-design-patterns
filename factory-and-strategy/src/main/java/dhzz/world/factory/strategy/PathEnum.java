@@ -14,9 +14,4 @@ public enum PathEnum {
     public String getPath() {
         return path;
     }
-
-    public void executeMethod(String methodName, String data) {
-        // 实现各自路径的方法逻辑
-    }
-
 }

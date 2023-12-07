@@ -1,16 +1,16 @@
 package dhzz.world.factory.strategy;
 
 public class YourWebService {
-    private PathHandlerFactory handlerFactory = new PathHandlerFactory();
+    private final PathHandlerFactory handlerFactory = new PathHandlerFactory();
 
-    public void invoke(String path, String methodName, String data) {
+    public String invoke(String path, String methodName, String data) {
         PathEnum pathEnum = getPathEnum(path);
-        PathHandler pathHandler = handlerFactory.createPathHandler(pathEnum);
-
-        if (pathHandler != null) {
-            pathHandler.execute(methodName, data);
+        if (pathEnum != null) {
+            PathHandler pathHandler = handlerFactory.createPathHandler(pathEnum);
+            return pathHandler.execute(methodName, data);
         } else {
-            // 处理找不到处理类的情况
+            // 抛出不支持的异常
+            return "不支持的path: " + path;
         }
     }
 
