@@ -24,6 +24,8 @@
         <module>factory</module>
         <module>abstract-factory</module>
         <module>factory-and-strategy</module>
+        <module>two-cent-principle</module>
+        <module>dbset-converter</module>
     </modules>
 
     <dependencyManagement>
