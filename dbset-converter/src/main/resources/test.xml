@@ -1,0 +1,28 @@
+<DBSET RESULT="2" D="3">
+    <R>
+        <C N="key1">value1</C>
+        <C N="key2">value2</C>
+        <C N="key3">
+            <DBSET RESULT="2">
+                <R>
+                    <C N="key1">value1</C>
+                    <C N="key2">value2</C>
+                    <C N="key3">value3</C>
+                </R>
+            </DBSET>
+        </C>
+    </R>
+    <R>
+        <C N="key1">value1</C>
+        <C N="key2">value2</C>
+        <C N="key3">
+            <DBSET RESULT="2">
+                <R>
+                    <C N="key1">value1</C>
+                    <C N="key2">value2</C>
+                    <C N="key3">value3</C>
+                </R>
+            </DBSET>
+        </C>
+    </R>
+</DBSET>
